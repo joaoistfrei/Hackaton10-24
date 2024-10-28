@@ -1,12 +1,11 @@
 # Telegram Chatbot @TranscreveAudiosBot para Assistência a Manutentores
 
-Esse projeto é um chatbot para Telegram que visa facilitar a rotina de manutenção, permitindo o processamento de áudios enviados pelo usuário para transformar as instruções em tópicos e oferecendo links e informações de ferramentas úteis.
+Esse projeto é um chatbot para Telegram que visa facilitar a rotina de manutenção, permitindo o processamento de áudios enviados pelo usuário para transformar as instruções em tópicos e informações de ferramentas úteis.
 
 ## 📋 Funcionalidades
 
 - **Transcrição e Resumo de Áudios**: Utilizando o modelo Whisper para transcrição e a API do ChatGPT para sintetizar o conteúdo em tópicos. O áudio contém instruções de tarefas diárias para os manutentores.
 - **Consulta de Ferramentas**: Realiza busca em um arquivo `.csv` com informações sobre ferramentas, facilitando o acesso a códigos e especificações.
-- **Sugestão de Links de Apoio**: Sugerir links relevantes para apoiar a execução das tarefas listadas.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -23,8 +22,6 @@ Esse projeto é um chatbot para Telegram que visa facilitar a rotina de manuten�
    - O texto transcrito é enviado para o ChatGPT, que gera um resumo em tópicos das instruções.
 3. **Busca de Ferramentas**:
    - O chatbot realiza consultas no arquivo `.csv` para encontrar ferramentas mencionadas nas instruções.
-4. **Sugestão de Links**:
-   - Com base nos tópicos extraídos, o chatbot sugere links úteis ao manutentor.
 
 ## 📂 Estrutura do Projeto
     ```bash
@@ -54,7 +51,7 @@ Esse projeto é um chatbot para Telegram que visa facilitar a rotina de manuten�
 ## 📌 Notas
 
 - **Limitações**: Audios muito diferentes do contexto de atribuição de tarefas ou pouco especificos não funcionam bem.
-- **Objetivo futuro**: No futuro esse mesmo bot poderia ser implementado em outros aplicativos como o Whatsapp mas a implementação é mais burocrética
+- **Objetivo futuro**: No futuro esse mesmo bot poderia ser implementado em outros aplicativos como o Whatsapp mas a implementação é mais burocrática
 
 ## 👥 Contribuidores
 
