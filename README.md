@@ -1,6 +1,6 @@
-# WhatsApp Chatbot para Assistência a Manutentores
+# Telegram Chatbot @TranscreveAudiosBot para Assistência a Manutentores
 
-Esse projeto é um chatbot para WhatsApp que visa facilitar a rotina de manutenção, permitindo o processamento de áudios enviados pelo usuário para transformar as instruções em tópicos e oferecendo links e informações de ferramentas úteis.
+Esse projeto é um chatbot para Telegram que visa facilitar a rotina de manutenção, permitindo o processamento de áudios enviados pelo usuário para transformar as instruções em tópicos e oferecendo links e informações de ferramentas úteis.
 
 ## 📋 Funcionalidades
 
@@ -13,11 +13,11 @@ Esse projeto é um chatbot para WhatsApp que visa facilitar a rotina de manuten�
 - **Whisper**: Para transcrição de áudios em texto.
 - **OpenAI ChatGPT**: Para processar e resumir o texto em tópicos claros e objetivos.
 - **Python e bibliotecas de manipulação de dados**: Para análise do `.csv` e implementação das funções do bot.
-- **Twilio API para WhatsApp**: Para envio e recebimento de mensagens pelo WhatsApp.
+- **API Telegram**: Para envio e recebimento de mensagens pelo Telegram.
 
 ## 🚀 Como Funciona
 
-1. **Recebimento de Áudio**: O usuário envia um áudio pelo WhatsApp, contendo instruções de manutenção.
+1. **Recebimento de Áudio**: O usuário envia um áudio pelo Telegram para o bot @TranscreveAudiosBot, contendo instruções de manutenção.
 2. **Transcrição e Processamento**:
    - O áudio é transcrito pelo Whisper.
    - O texto transcrito é enviado para o ChatGPT, que gera um resumo em tópicos das instruções.
@@ -53,8 +53,8 @@ Esse projeto é um chatbot para WhatsApp que visa facilitar a rotina de manuten�
 
 ## 📌 Notas
 
-- **Privacidade**: Todos os dados transcritos são tratados com confidencialidade e utilizados exclusivamente para o propósito do projeto.
-- **Limitações**: Para áudios muito extensos, o resumo pode ser sintetizado, focando apenas nas instruções principais.
+- **Limitações**: Audios muito diferentes do contexto de atribuição de tarefas ou pouco especificos não funcionam bem.
+- **Objetivo futuro**: No futuro esse mesmo bot poderia ser implementado em outros aplicativos como o Whatsapp mas a implementação é mais burocrética
 
 ## 👥 Contribuidores
 
