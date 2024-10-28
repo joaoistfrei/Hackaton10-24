@@ -28,6 +28,15 @@ Esse projeto é um chatbot para WhatsApp que visa facilitar a rotina de manuten�
 
 ## 📂 Estrutura do Projeto
 
+├── code 
+│ └── text-speech.py # Script para transcrição e processamento do áudio 
+├── files
+│ ├── audioEx.wav # Exemplo de arquivo de áudio para teste 
+│ └── codigosSAP.csv # Base de dados com códigos de ferramentas 
+├── .gitignore # Arquivo para ignorar arquivos desnecessários no Git 
+├── README.md # Documentação do projeto 
+└── requirements.txt # Dependências necessárias para o projeto
+
 
 ## ⚙️ Configuração
 
