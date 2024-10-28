@@ -24,7 +24,6 @@ Esse projeto é um chatbot para Telegram que visa facilitar a rotina de manuten�
    - O chatbot realiza consultas no arquivo `.csv` para encontrar ferramentas mencionadas nas instruções.
 
 ## 📂 Estrutura do Projeto
-    ```bash
     ├── code<br>
     │   └── text-speech.py          # Script para transcrição e processamento do áudio <br>
     ├── files<br>

@@ -31,6 +31,9 @@ tools = {row['Descrição do Material/Equipamento']: row['Código SAP'] for _, r
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("Olá! O chat está funcionando. Envie um áudio em português para transcrever e processar.")
 
+async def ajuda(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text("Caso me envie áudios, transformo em formato de lista de atividades para facilitar o acompanhamento. Além disso, se você me enviar um texto, assumo que é o nome de uma ferramenta que você procura e retorno o nome completo e o código SAP correspondente.")
+
 async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("Recebendo o áudio...")
 
@@ -59,7 +62,7 @@ async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     # Exibir transcrição no chat
     await update.message.reply_text(f"Transcrição do áudio:\n{transcription_text}")
 
-    await update.message.reply_text("Resumindo em tópicos...")
+    await update.message.reply_text("Resumindo em topicos...")
 
     # Formatar e enviar a transcrição ao OpenAI
     entrada = (
@@ -95,4 +98,3 @@ async def search_tools(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         await update.message.reply_text(f"Ferramenta: {tool}, Código SAP: {tool_code}")
     else:
         await update.message.reply_text("Desculpe, não encontrei nenhuma ferramenta com esse nome. Tente novamente ou envie um áudio.")
-
