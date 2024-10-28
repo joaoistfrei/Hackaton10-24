@@ -25,7 +25,7 @@ whisper_model = whisper.load_model("medium")
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Carregar dados CSV (exemplo)
-sap_data = pd.read_csv('codigosSAP.csv')  # Certifique-se que o arquivo está neste caminho
+sap_data = pd.read_csv('./files/codigosSAP.csv')  # Certifique-se que o arquivo está neste caminho
 tools = {row['Descrição do Material/Equipamento']: row['Código SAP'] for _, row in sap_data.iterrows()}
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -59,7 +59,7 @@ async def handle_audio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     # Exibir transcrição no chat
     await update.message.reply_text(f"Transcrição do áudio:\n{transcription_text}")
 
-    await update.message.reply_text("Processando a transcrição com o OpenAI...")
+    await update.message.reply_text("Resumindo em tópicos...")
 
     # Formatar e enviar a transcrição ao OpenAI
     entrada = (
